@@ -32,7 +32,7 @@ class Game
 
         puts "Player #{@players[winner].id} wins with score of #{@players[winner].life}/3"
         puts "----- GAME OVER -----"
-        playing = false
+        puts "Good Bye!"
         return 1
       end
 

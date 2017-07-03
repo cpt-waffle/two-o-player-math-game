@@ -1,0 +1,6 @@
+module MathGame
+  DEFAULT = 0
+  DEFAULT_START_VALUE = 1
+  DEFAULT_END_VALUE = 20
+
+end

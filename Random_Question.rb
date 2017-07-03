@@ -1,18 +1,19 @@
 class Random_Question
+require './MathGame.rb'
 
   attr_reader :ans
 
   def initialize()
-    @num1 = 0
-    @num2 = 0
-    @ans  = 0
+    @num1 = MathGame::DEFAULT
+    @num2 = MathGame::DEFAULT
+    @ans  = MathGame::DEFAULT
     @question = ""
   end
 
   def generate_question()
-    @num1 = rand(1..20)
-    @num2 = rand(1..20)
-    temp = rand(1..3)
+    @num1 = rand(MathGame::DEFAULT_START_VALUE..MathGame::DEFAULT_END_VALUE)
+    @num2 = rand(MathGame::DEFAULT_START_VALUE..MathGame::DEFAULT_END_VALUE)
+    temp = rand(MathGame::DEFAULT_START_VALUE..3)
 
     if temp == 1
       self.plus()
